@@ -1,0 +1,27 @@
+body
+{
+    background-color: rgba(164, 29, 27);
+}
+#div4 , #div5
+{
+    width: 50%;
+    height: 100%; 
+}
+#div4
+{
+    background-image: url(../IMAGES/rideau_gauche.jpeg);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#div5
+{
+    background-image: url(../IMAGES/rideau_droit.jpg);
+    position: absolute;
+    top: 10px;
+    left: 769px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
