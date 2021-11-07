@@ -130,3 +130,96 @@ body
 {
     color: rgb(221, 86, 32);
 }
+
+
+
+#retour
+{
+  top: 0;
+  left: 0;
+  transition: all .15s linear 0s;
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: rgb(97, 94, 89);
+  border-radius: 10px;
+  
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: arial;
+  letter-spacing: 1px;
+  
+  box-shadow: -6px 6px 0 rgb(0, 0, 0);
+  text-decoration: none;
+}  
+#retour:hover 
+{
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 rgb(0, 0, 0);
+}    
+    
+#retour:after 
+{
+      top: 1px;
+      left: -2px;
+      width: angle-o;
+      height: angle-o;
+}
+    
+#retour:before 
+{
+      bottom: -2px;
+      right: 1px;
+      width: angle-o;
+      height: angle-o;
+} 
+#retour:after 
+{
+    transition: all .15s linear 0s;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -4px;
+    width: angle;
+    height: angle;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    z-index: -1;   
+}
+  
+#retour:before 
+{
+    transition: all .15s linear 0s;
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 2px;
+    width: angle;
+    height: angle;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+a#retour 
+{ 
+    position: relative; 
+}
+
+a:active#retour
+{
+  top: 6px;
+  left: -6px;
+  box-shadow: none;
+}  
+#retour:before 
+{
+    bottom: 1px;
+    right: 1px;
+}
+  
+#retour:after 
+{
+    top: 1px;
+    left: 1px; 
+}
