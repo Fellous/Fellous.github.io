@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>C'est pas ici :)</h1>
+<p>Passez dans le Portefolio svp.</p>
 
 test tes test
 
