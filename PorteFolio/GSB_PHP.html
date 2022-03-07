@@ -11,8 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="lightbox.min.css">
 	</head>
 	<body class="is-preload">
+        <script src="lightbox-plus-jquery.min.js"></script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -20,7 +22,7 @@
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style2">
-						<a href="pdf/Attestation_de_stage_-_SIO_2021 (1).pdf" class="logo"><strong>Atestation de stage 1</strong> </a>
+						
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -50,10 +52,10 @@
 								<img src="images/pic07.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Stage de premiere année</h1>
+								<h1>GSB JAVA</h1>
 							</header>
 							<div class="content">
-								<p>Entreprise Cobra<br />
+								<p>E6 partie 2<br />
 								</p>
 							</div>
 						</div>
@@ -61,6 +63,7 @@
 
 				<!-- Main -->
 					<div id="main">
+                      
 
 						<!-- One -->
 							<section id="one">
@@ -68,123 +71,58 @@
 									<header class="major">
 										<h2>Introduction</h2>
 									</header>
-									<p>Le projet sur lequel j’ai travaillé est un site de facturation qui permet de 
-                                        gérer des commandes pour une entreprise : Cobra. Cette société vend des pièces 
-                                        d’automobile comme des par-brises, des portes, des vitres, des pots d’échappements etc.
-                                        Ce site est destiné à l’utilisation par les employés, il permet d’avoir accès a la 
-                                        liste des produits proposé par l’entreprise, avoir accès à la liste des clients déjà 
-                                        enregistrés pour créer des factures, des BLS, des avoirs, des devis en fonction du souhait 
-                                        du client et avoir accès très rapidement à l’ensemble de ces données. Mon rôle durant ce stage 
-                                        a été de remplir les mises à jour sur differentes fonctionalités du site web dont mon tuteur me 
-                                        faisait part à travers dfferentes tâches.
+									<p>Au cours de notre 2 -ème année nous avons réalisé un projet de groupe pour 
+                                        l’épreuve E6 utilisant comme technologie Java. Nous avons codé en utilisant l’IDLE NetBeans
+                                         que nous avions eu l’habitude d’utiliser pour nos projets de l’année précédente. Nous avons
+                                          reçu un contexte d’une industrie pharmaceutique avec la proposition de développer plusieurs 
+                                          fonctionnalités et nous avons choisi avec mon équipe la partie " médicament "" 
                                        </p>
 								</div>
 							</section>
+                           
+                            
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/stage1.1.png" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Pagination Ajax</h3>
-											</header>
-											<p>J’ai dû  mettre en place une recherche dynamique qui permet de rechercher 
-                                                en temps réel dans tous les éléments de la base de données. Ceci afin d’afficher 
-                                                dans le tableau les éléments correspondants à la recherche demandée peu importe le 
-                                                champs utilisé. Cela en temps réel, dès que l’utilisateur appui sur une touche 
-                                                d’un des inputs, cela actualise le tableau des résultats en dessous en temps réel, 
-                                                en utilisant la méthode Ajax.</p>
-											<ul class="actions">
-												<li><a href="pdf/Synthése de stage slam D.F.pdf" class="button">En apprendre plus</a></li>
-                                                
-                                                
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="generic.html" class="image">
-										<img src="images/stage1.2.png" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Nouvelles fonctionalités</h3>
-											</header>
-											<p>La mission suivante m’a permi d’aborder une autre partie de 
-                                                la bibliothèque : le modal. Pour l’ajout d’un système de suppression 
-                                                possible, en plus des boutons "Afficher" (rediriger vers la page invoicesDetail.html) 
-                                                et "Modifier" (rediriger vers la page editInvoices.html) de facture uniquement si 
-                                                elle n’a pas de numéro, avec un bouton supprimer et un modal qui demande confirmation.
-                                                L’ajax qui est ensuite appelé envoie le numéro de la facture qui a été sélectionné à la 
-                                                page deleteInvoices.html. Il lancera une requête SQL préparée par mon responsable pour 
-                                                supprimer de la BDD la facture correspondante :</p>
-											<ul class="actions">
-												<li><a href="pdf/Synthése de stage slam D.F.pdf" class="button">En apprendre plus</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a href="generic.html" class="image">
-                                        <img src="images/stage1.3.2.png" alt="" data-position="25% 25%" />
-                                        <p>ou</p> 
-										<img src="images/stage1.3.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Optmisation de la recherche</h3>
-											</header>
-											<p>Mise en place de pagination PHP sur la page 
-                                                advanced_search. Les résultats étaient limités à 100 dans
-                                                 le tableau jusqu’à présent. Nous allons utiliser la méthode de
-                                                  pagination pour pouvoir parcourir l’ensemble des résultats. 
-                                                  Nous affichons désormais au début quelques pages qui suivent la 
-                                                  première et quand on dépasse ce stade nous affichons les trois pages 
-                                                  précédentes, les trois suivantes de celles ou l'on se situe. Il y a  
-                                                  un bouton début et un bouton fin qui nous permettent de se déplacer plus 
-                                                  rapidement si on se trouve en milieu de recherche. Grâce aux requêtes 
-                                                  progressives on charge de la BDD que ce que l’on veut afficher, et non 
-                                                  toute la BDD dès le début. </p>
-											<ul class="actions">
-												<li><a href="pdf/Synthése de stage slam D.F.pdf" class="button">En apprendre plus</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</section>
-
-						<!-- Three -->
-							<section id="three">
+                            <section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Conclusion</h2>
+										<h2>1)	Mise en place et organisation</h2>
 									</header>
-									<p>Durant ce stage, j’ai appris à travailler 
-                                        en autonomie, à réfléchir par moi-même pour 
-                                        trouver des solutions ou bien de nouvelles idées 
-                                        pour résoudre diverses problèmes, mais également à beaucoup
-                                         me documenter, car très souvent un problème que l’on 
-                                         rencontre peut déjà avoir été résolu par le passé. J’ai 
-                                         appris à écouter les reproches que me faisait mon tuteur 
-                                         pour ne plus recommencer les mêmes, qui m’aurait gêné dans le futur.  
-                                         Mon responsable de formation a été très attentionné avec moi, j’ai 
-                                         pu souvent lui poser des questions sur des problèmes rencontrés ou je 
-                                         ne pouvais plus avancer, s’agissant d’un projet en cours de route, 
-                                         beaucoup de méthodes m'étaient inconnues, j’en ai appris davantage sur le 
-                                         PHP, l’Ajax, les bibliothèque JS, sur Bootstrap et sur les requêtes SQL. </p>
-									<ul class="actions">
-										<li><a href="index.html" class="button next">Retour</a></li>
-									</ul>
+									<p>Pour débuter ce projet nous avons dû tout d’abord nous repartir les taches pour designer
+                                         ceux qui s’occuperont de la maquette du projet et ceux qui réaliseront la base de données
+                                          avec les jeux d’essai. Pour ce faire nous avons utilisé un Trello pour repartir les taches
+                                           et le logiciel XD pour réaliser la maquette du projet avec les diverses fonctionnalités qui
+                                            étaient demandées. Nous avons, après rectification de notre professeur, corrigé certains aspects de
+                                             la maquette et de la BDD
+                                       </p>
 								</div>
 							</section>
+                            <div class="box alt">
+                                <div class="row gtr-50 gtr-uniform">
+                                    <div class="col-4"><a class="example-image-link" href="images/javaTrello.png" data-lightbox="example-1"><img class="example-image" src="images/javaTrello.png" alt="image-1" /></a></div>
+                                    <div class="col-4"><a class="example-image-link" href="images/JAVAxd.png" data-lightbox="example-1"><img class="example-image" src="images/JAVAxd.png" alt="image-1" /></a></div>
+                                    <div class="col-4"><a class="example-image-link" href="images/javaBDD.png" data-lightbox="example-1"><img class="example-image" src="images/javaBDD.png" alt="image-1" /></a></div>
+                                </div>
+                            </div>
 
-					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                          
+
+
+
+
+
+
 
 				<!-- Contact -->
 					<section id="contact">
